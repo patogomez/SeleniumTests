@@ -14,12 +14,12 @@ public class SeleniumSteps extends Steps{
     private SeleniumPage seleniumPage;
     
     @Given("I go to $webpage")
-    public void homepageOnYellDotCom(String webpage) {
+    public void goToGooglePage(String webpage) {
     	googlePage.go(webpage);
     }
 
     @When("I type $searchword in the searchbox")
-    public void enterDestinationEmail(String searchword){
+    public void fillSearchBox(String searchword){
     	googlePage.fillSearchBox(searchword);
     }
     
